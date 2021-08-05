@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "DrldBB3ZL5Eb35vblzz6TsXh6s5EQK3qME7/QVLgJpeeGAQdol3rUPk/4gg5maxHhERNpVvvB1E8iNZ3+R0asA==",
+  "success": true,
+  "projectFilePath": "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\CarsAPI\\CarsAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stefan.vandelaarscho\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512"
+  ],
+  "logs": []
+}
