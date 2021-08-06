@@ -12,6 +12,7 @@ using CarsAPI.Classes.Evaluators;
 
 namespace Cars.Tests
 {
+    [Trait("Car Class", "Objects")]
     [CollectionDefinition("CarFixture collection")]
     public class CarTests : IClassFixture<CarFixture>
     {
@@ -52,7 +53,7 @@ namespace Cars.Tests
             /*
              [Description]
              So, If u mocking an Function you have to Setup this function and manipulate (It.Is etc) what this function should do.
-             so it could be mocked (You code twice).
+             so it could be mocked (You code twice). 
              */
             mockValidator.Setup(x => x.IsValidLicensePlateNr(It.Is<string>(licensePlateNr => 
             !string.IsNullOrEmpty(licensePlateNr) && licensePlateNr.Length >= 8))).Returns(true); 

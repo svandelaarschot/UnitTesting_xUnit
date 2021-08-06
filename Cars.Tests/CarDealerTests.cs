@@ -10,6 +10,7 @@ using Xunit.Sdk;
 
 namespace Cars.Tests
 {
+    [Trait("CarDealer Class", "Objects")]
     [CollectionDefinition("CarFixture collection")]
     public class CarDealerTests : IClassFixture<CarFixture>
     {
