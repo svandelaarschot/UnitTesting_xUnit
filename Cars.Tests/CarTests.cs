@@ -21,6 +21,18 @@ namespace Cars.Tests
             _carFixture = carFixture;
         }
 
+        [Fact]
+        public void Car_CarBrandIsRequired()
+        {
+            // Arrange
+            var sut = _carFixture.Car;
+            sut.Brand = null;
+
+            // Act
+
+            // Assert
+            Assert.True(string.IsNullOrEmpty(sut.Brand));
+        }
 
         [Fact]
         public void Car_IsInvalid_WithoutLicensePlateOrBrand()
@@ -58,5 +70,24 @@ namespace Cars.Tests
             // Assert
             Assert.Equal("Seat Hatchback Gasoline", sut.CarName, ignoreCase: true);
         }
+        
+        [Fact(Skip = "Reason: Example of Ignoring Tests")]
+        public void SkippedTestExample()
+        {
+            // Skipped Test
+        }
+
+        [Theory]
+        [InlineData("Example1", "Example 2")]
+        public void MultipleTestsCombinedExample(string example, string expectedExample)
+        {
+            // Arrange
+            // sut.DoSomething(example)
+            // Act
+
+            // Assert
+            // Assert.Equal(expectedExample, example)
+        }
+
     }
 }

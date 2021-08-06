@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\Cars.Tests\\Cars.Tests.csproj": {}
+    "C:\\Development\\Studying\\UnitTesting_xUnit\\Cars.Tests\\Cars.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\Cars.Tests\\Cars.Tests.csproj": {
+    "C:\\Development\\Studying\\UnitTesting_xUnit\\Cars.Tests\\Cars.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\Cars.Tests\\Cars.Tests.csproj",
+        "projectUniqueName": "C:\\Development\\Studying\\UnitTesting_xUnit\\Cars.Tests\\Cars.Tests.csproj",
         "projectName": "Cars.Tests",
-        "projectPath": "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\Cars.Tests\\Cars.Tests.csproj",
+        "projectPath": "C:\\Development\\Studying\\UnitTesting_xUnit\\Cars.Tests\\Cars.Tests.csproj",
         "packagesPath": "C:\\Users\\stefan.vandelaarscho\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\Cars.Tests\\obj\\",
+        "outputPath": "C:\\Development\\Studying\\UnitTesting_xUnit\\Cars.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\stefan.vandelaarscho\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -30,8 +30,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\CarsAPI\\CarsAPI.csproj": {
-                "projectPath": "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\CarsAPI\\CarsAPI.csproj"
+              "C:\\Development\\Studying\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj": {
+                "projectPath": "C:\\Development\\Studying\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj"
               }
             }
           }
@@ -90,14 +90,14 @@
         }
       }
     },
-    "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\CarsAPI\\CarsAPI.csproj": {
+    "C:\\Development\\Studying\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\CarsAPI\\CarsAPI.csproj",
+        "projectUniqueName": "C:\\Development\\Studying\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj",
         "projectName": "CarsAPI",
-        "projectPath": "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\CarsAPI\\CarsAPI.csproj",
+        "projectPath": "C:\\Development\\Studying\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj",
         "packagesPath": "C:\\Users\\stefan.vandelaarscho\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\Studying\\UnitTesting xUnit\\CarsAPI\\CarsAPI\\obj\\",
+        "outputPath": "C:\\Development\\Studying\\UnitTesting_xUnit\\CarsAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\stefan.vandelaarscho\\AppData\\Roaming\\NuGet\\NuGet.Config",

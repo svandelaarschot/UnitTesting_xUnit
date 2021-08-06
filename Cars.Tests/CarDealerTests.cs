@@ -23,6 +23,19 @@ namespace Cars.Tests
         }
 
         [Fact]
+        public void CarDealer_DealerNameIsRequired()
+        {
+            // Arrange
+            var sut = _carFixture.CardDealer;
+            sut.DealerName = null;
+
+            // Act
+
+            // Assert
+            Assert.True(string.IsNullOrEmpty(sut.DealerName));
+        }
+
+        [Fact]
         public void CarDealer_HasUnSupportedCars()
         {
             // Arrange

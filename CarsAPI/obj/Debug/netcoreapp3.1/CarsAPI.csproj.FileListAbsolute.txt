@@ -18,3 +18,23 @@ C:\Development\Studying\UnitTesting xUnit\CarsAPI\CarsAPI\obj\Debug\netcoreapp3.
 C:\Development\Studying\UnitTesting xUnit\CarsAPI\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.dll
 C:\Development\Studying\UnitTesting xUnit\CarsAPI\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.pdb
 C:\Development\Studying\UnitTesting xUnit\CarsAPI\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.genruntimeconfig.cache
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\bin\Debug\netcoreapp3.1\CarsAPI.exe
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\bin\Debug\netcoreapp3.1\CarsAPI.deps.json
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\bin\Debug\netcoreapp3.1\CarsAPI.runtimeconfig.json
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\bin\Debug\netcoreapp3.1\CarsAPI.runtimeconfig.dev.json
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\bin\Debug\netcoreapp3.1\CarsAPI.dll
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\bin\Debug\netcoreapp3.1\CarsAPI.pdb
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.csproj.AssemblyReference.cache
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.AssemblyInfoInputs.cache
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.AssemblyInfo.cs
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.csproj.CoreCompileInputs.cache
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\staticwebassets\CarsAPI.StaticWebAssets.Manifest.cache
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\staticwebassets\CarsAPI.StaticWebAssets.xml
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\scopedcss\bundle\CarsAPI.styles.css
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.RazorTargetAssemblyInfo.cache
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.dll
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.pdb
+C:\Development\Studying\UnitTesting_xUnit\CarsAPI\obj\Debug\netcoreapp3.1\CarsAPI.genruntimeconfig.cache
