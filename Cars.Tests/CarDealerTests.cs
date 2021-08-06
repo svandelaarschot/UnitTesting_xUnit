@@ -44,7 +44,7 @@ namespace Cars.Tests
             {
                 new Car()
                 {
-                    Brand = "Peugeut 206",
+                    Brand = "Peugeot 206",
                     CarType = CarType.SUV,
                     ConstructionYear = DateTime.Now,
                     FuelType = FuelType.Gasoline,
@@ -53,7 +53,7 @@ namespace Cars.Tests
                 },
                 new Car()
                 {
-                    Brand = "Peugeut 108",
+                    Brand = "Peugeot 108",
                     CarType = CarType.Small,
                     ConstructionYear = DateTime.Now,
                     FuelType = FuelType.Gasoline,
@@ -62,7 +62,7 @@ namespace Cars.Tests
                 },
                 new Car()
                 {
-                    Brand = "Peugeut 2008",
+                    Brand = "Peugeot 2008",
                     CarType = CarType.Electric,
                     ConstructionYear = DateTime.Now,
                     FuelType = FuelType.Electric,
@@ -87,7 +87,6 @@ namespace Cars.Tests
             var hasUnSupportedCars = sut.HasUnSupportedCars(out unSupportedCars);
 
             // Logging
-            _output.WriteLine($"Welcome to {sut.DealerName}");
             _output.WriteLine($"\nWe have expertise with: \n- {string.Join("\n- ", sut.SupportedCarTypes)}");
             _output.WriteLine($"\nCars found:\n- { string.Join("\n- ", stockedCars.Where(x => sut.SupportedCarTypes.Contains(x.CarType)).Select(x => x.CarName + $" supported Type: ({x.CarType})"))}");
             _output.WriteLine($"\nCars found we don't have expertise with:\n- { string.Join("\n- ", unSupportedCars.Select(x => x.CarName + $" Unsupported Type: ({x.CarType})"))}");

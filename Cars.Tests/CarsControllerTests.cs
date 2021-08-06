@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using Moq;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Xunit;
 using Xunit.Abstractions;
@@ -34,10 +35,13 @@ namespace Cars.Tests
         public void CarsController_GetAllCars()
         {
             // Arrange
+            // Only take 5 results
+            var maxResult = 5;
 
             // Act
-            var actualCars = _carsController.GetAll();
+            var actualCars = _carsController.GetAll().Take(maxResult).ToList();
 
+            _output.WriteLine($"Max Results ({maxResult}) for output:");
             _output.WriteLine($"We found car(s):");
             _output.WriteLine($"--------------------------------");
 
@@ -62,7 +66,7 @@ namespace Cars.Tests
             // Act
             var actualCar = _carsController.GetCarById(carId);
 
-            _output.WriteLine($"We found car:");
+            _output.WriteLine($"We found car filtered on Id ({carId}):");
             _output.WriteLine($"--------------------------------");
             _output.WriteLine($"- Id ({actualCar.Id})");
             _output.WriteLine($"- Brand ({actualCar.Brand})");
