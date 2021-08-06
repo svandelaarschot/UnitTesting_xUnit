@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarsAPI.Classes.Evaluators;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace CarsAPI.Classes
@@ -26,6 +27,8 @@ namespace CarsAPI.Classes
 
     public class Car
     {
+        private readonly ICarValidator _carValidator;
+
         public int Id { get; set; }
 
         [Required]
@@ -33,14 +36,22 @@ namespace CarsAPI.Classes
         public FuelType FuelType { get; set; } = FuelType.Unknown;
         public CarType CarType { get; set; } = CarType.Unknown;
         public bool IsFirstOwner { get; set; }
+        
+        [Required]
         public string LicensePlateNr { get; set; }
         public DateTime ConstructionYear { get; set; }
         public string CarName => $"{Brand} {CarType} {FuelType}";
+        
 
         public bool IsValid()
         {
             return !string.IsNullOrEmpty(Brand)
                 || !string.IsNullOrEmpty(LicensePlateNr);
+        }
+
+        public bool IsValidLicensePlateNr()
+        {
+            return _carValidator.IsValidLicensePlateNr(LicensePlateNr);
         }
 
         public Car() { }
@@ -58,6 +69,11 @@ namespace CarsAPI.Classes
             IsFirstOwner = isFirstOwner;
             LicensePlateNr = licensePlateNr;
             ConstructionYear = constructionYear;
+        }
+
+        public Car(ICarValidator validator) 
+        {
+            _carValidator = validator ?? throw new ArgumentNullException(nameof(validator));
         }
     }
 }

@@ -1,11 +1,14 @@
 /*
     SUT = System Under Test 
-*/
+    Mocks<> works with Interfaces else there is nothing you need to mock.
+ */
 
 using CarsAPI.Classes;
 using System;
 using Xunit;
 using Xunit.Abstractions;
+using Moq;
+using CarsAPI.Classes.Evaluators;
 
 namespace Cars.Tests
 {
@@ -32,6 +35,41 @@ namespace Cars.Tests
 
             // Assert
             Assert.True(string.IsNullOrEmpty(sut.Brand));
+        }
+
+        /// <summary>
+        /// Mocking Example
+        /// </summary>
+        [Fact]
+        public void Car_IsValidLicensePlateNr()
+        {
+            // Arrange
+            var licensePlateNr = "21-SV-ZV";
+            Mock<ICarValidator> mockValidator = new Mock<ICarValidator>();
+
+            // mockValidator.Setup(x => x.IsValidLicensePlateNr(It.IsAny<string>())).Returns(true); 
+            
+            /*
+             [Description]
+             So, If u mocking an Function you have to Setup this function and manipulate (It.Is etc) what this function should do.
+             so it could be mocked (You code twice).
+             */
+            mockValidator.Setup(x => x.IsValidLicensePlateNr(It.Is<string>(licensePlateNr => 
+            !string.IsNullOrEmpty(licensePlateNr) && licensePlateNr.Length >= 8))).Returns(true); 
+
+            var sut = _carFixture.Car = new Car(mockValidator.Object);
+            sut.Brand = "Peugeot 307";
+            sut.LicensePlateNr = licensePlateNr;
+            sut.FuelType = FuelType.Gasoline;
+            sut.CarType = CarType.Hatchback;
+            sut.IsFirstOwner = true;
+            sut.ConstructionYear = DateTime.Now;
+
+            // Act
+            bool result = sut.IsValidLicensePlateNr();
+
+            // Assert
+            Assert.True(result);
         }
 
         [Fact]

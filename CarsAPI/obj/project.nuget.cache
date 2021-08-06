@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X1iY7R9azU1+8J9K5eGK75vp9CxSi6MkeVgKLXmJKXkbOrao2s2wXN9X+onqEMGsU3omIBTNWGIW4+PF6iNpaA==",
+  "dgSpecHash": "cywnyKOrk4ODKljc1lhbcRvCP9+TvRxFPgjgGy94oIENR/xdQXpEWdEt3F4uvx3g6jlkemHm0wyvRkmcb+8mbg==",
   "success": true,
-  "projectFilePath": "C:\\Development\\Studying\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj",
+  "projectFilePath": "E:\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\stefan.vandelaarscho\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512"
+    "C:\\Users\\svand\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.14\\microsoft.visualstudio.azure.containers.tools.targets.1.10.14.nupkg.sha512"
   ],
   "logs": []
 }

@@ -98,29 +98,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\stefan.vandelaarscho\\.nuget\\packages\\": {}
+    "C:\\Users\\svand\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\Studying\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj",
+      "projectUniqueName": "E:\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj",
       "projectName": "CarsAPI",
-      "projectPath": "C:\\Development\\Studying\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj",
-      "packagesPath": "C:\\Users\\stefan.vandelaarscho\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\Studying\\UnitTesting_xUnit\\CarsAPI\\obj\\",
+      "projectPath": "E:\\UnitTesting_xUnit\\CarsAPI\\CarsAPI.csproj",
+      "packagesPath": "C:\\Users\\svand\\.nuget\\packages\\",
+      "outputPath": "E:\\UnitTesting_xUnit\\CarsAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\stefan.vandelaarscho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\svand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Development\\NuGetPackages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://artifactory.cgm.ag/api/nuget/cgm.nl.common.nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -161,7 +164,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
       }
     }
   }
