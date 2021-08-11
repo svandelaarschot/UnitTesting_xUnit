@@ -9,6 +9,7 @@ using Xunit;
 using Xunit.Abstractions;
 using Moq;
 using CarsAPI.Classes.Evaluators;
+using System.Collections.Generic;
 
 namespace Cars.Tests
 {
@@ -38,27 +39,37 @@ namespace Cars.Tests
             Assert.True(string.IsNullOrEmpty(sut.Brand));
         }
 
-        /// <summary>
-        /// Mocking Example
-        /// </summary>
-        [Fact]
-        public void Car_IsValidLicensePlateNr()
+        [Theory]
+        [InlineData("21-SV")]
+        [InlineData("21")]
+        [InlineData(null)]
+        public void Car_IsValidLicensePlateNr_Invalid(string licensePlateNr)
         {
             // Arrange
-            var licensePlateNr = "21-SV-ZV";
-            Mock<ICarValidator> mockValidator = new Mock<ICarValidator>();
+            var carValidatorService = new CarValidatorService();
+            var sut = _carFixture.Car = new Car(carValidatorService); // We going to test IsValidLicensePlateNr();
+            sut.Brand = "Peugeot 307";
+            sut.LicensePlateNr = licensePlateNr;
+            sut.FuelType = FuelType.Gasoline;
+            sut.CarType = CarType.Hatchback;
+            sut.IsFirstOwner = true;
+            sut.ConstructionYear = DateTime.Now;
 
-            // mockValidator.Setup(x => x.IsValidLicensePlateNr(It.IsAny<string>())).Returns(true); 
-            
-            /*
-             [Description]
-             So, If u mocking an Function you have to Setup this function and manipulate (It.Is etc) what this function should do.
-             so it could be mocked (You code twice). 
-             */
-            mockValidator.Setup(x => x.IsValidLicensePlateNr(It.Is<string>(licensePlateNr => 
-            !string.IsNullOrEmpty(licensePlateNr) && licensePlateNr.Length >= 8))).Returns(true); 
+            // Act
 
-            var sut = _carFixture.Car = new Car(mockValidator.Object);
+            // Assert
+            Assert.Throws<FormatException>(() => sut.IsValidLicensePlateNr());
+        }
+
+        [Theory]
+        [InlineData("21-SV-ZV")]
+        [InlineData("21-SV-ZV-XX")]
+        [InlineData("21-SV-ZV-XX-XX-XX")]
+        public void Car_IsValidLicensePlateNr_Valid(string licensePlateNr)
+        {
+            // Arrange
+            var carValidatorService = new CarValidatorService();
+            var sut = _carFixture.Car = new Car(carValidatorService); // We going to test IsValidLicensePlateNr();
             sut.Brand = "Peugeot 307";
             sut.LicensePlateNr = licensePlateNr;
             sut.FuelType = FuelType.Gasoline;

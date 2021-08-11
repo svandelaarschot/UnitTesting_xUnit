@@ -27,7 +27,7 @@ namespace CarsAPI.Classes
 
     public class Car
     {
-        private readonly ICarValidator _carValidator;
+        protected readonly ICarValidator _carValidator;
 
         public int Id { get; set; }
 
